@@ -14,18 +14,18 @@
         <EditText
             android:id="@+id/city_name"
             android:layout_width="300dp"
+            android:maxLines="1"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="Enter a City Name..."
-            android:maxLines="1" />
+            android:hint="Enter a City Name..." />
 
         <ImageButton
             android:id="@+id/search_city"
             android:layout_width="100dp"
             android:layout_height="64dp"
-            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_search_location"
             android:background="@android:color/holo_blue_light"
-            android:src="@drawable/ic_search_location" />
+            android:layout_alignParentEnd="true"/>
 
 
         <ImageView
@@ -49,6 +49,7 @@
             android:textSize="40sp" />
 
         <TextView
+            android:visibility="invisible"
             android:id="@+id/weather_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -57,11 +58,13 @@
             android:fontFamily="@font/bbb"
             android:text="description"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
-            android:visibility="invisible" />
+            android:textSize="24sp" />
+
+
 
 
         <TextView
+            android:visibility="invisible"
             android:id="@+id/text_view_temperature"
             android:layout_width="wrap_content"
             android:layout_height="140dp"
@@ -72,10 +75,10 @@
             android:fontFamily="@font/bbb"
             android:text="5"
             android:textColor="@android:color/white"
-            android:textSize="120sp"
-            android:visibility="invisible" />
+            android:textSize="120sp" />
 
         <TextView
+            android:visibility="invisible"
             android:id="@+id/feeling_temp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,10 +88,10 @@
             android:fontFamily="@font/bbb"
             android:text="feels like"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
-            android:visibility="invisible" />
+            android:textSize="24sp" />
 
         <TextView
+            android:visibility="invisible"
             android:id="@+id/temp_icon1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -99,10 +102,10 @@
             android:fontFamily="@font/bbb"
             android:text="°C"
             android:textColor="@android:color/white"
-            android:textSize="24sp"
-            android:visibility="invisible" />
+            android:textSize="24sp" />
 
         <TextView
+            android:visibility="invisible"
             android:id="@+id/temp_icon2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -113,26 +116,25 @@
             android:fontFamily="@font/bbb"
             android:text="°C"
             android:textColor="@android:color/white"
-            android:textSize="14sp"
-            android:visibility="invisible" />
+            android:textSize="14sp" />
 
         <TextView
+            android:visibility="invisible"
             android:id="@+id/text_view_location"
             android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
             android:layout_height="wrap_content"
             android:layout_below="@+id/city_name"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
+            android:text="city"
             android:layout_marginTop="24dp"
-            android:autoSizeMaxTextSize="40sp"
-            android:autoSizeMinTextSize="10sp"
             android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeMaxTextSize="40sp"
             android:fontFamily="@font/bbb"
             android:maxLines="1"
-            android:text="city"
             android:textColor="@android:color/white"
-            android:textSize="40sp"
-            android:visibility="invisible" />
+            android:textSize="40sp" />
 
         <TextView
             android:id="@+id/current_day"
@@ -148,6 +150,7 @@
             android:visibility="invisible" />
 
         <TextView
+            android:visibility="invisible"
             android:id="@+id/current_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -156,15 +159,14 @@
             android:fontFamily="@font/bbb"
             android:text="Current Date"
             android:textColor="@android:color/white"
-            android:textSize="40sp"
-            android:visibility="invisible" />
+            android:textSize="40sp" />
 
         <RadioGroup
+            android:visibility="invisible"
             android:id="@+id/radio_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/city_name"
-            android:visibility="invisible">
+            android:layout_below="@+id/city_name">
 
             <RadioButton
                 android:id="@+id/celsius_radio_button"
